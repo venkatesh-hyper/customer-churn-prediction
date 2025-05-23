@@ -8,7 +8,7 @@ This project analyzes customer churn data and builds multiple machine learning m
 ---
 
 ## Dataset
-- **Source:** `[kaggle data](https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling/data)`
+- **Source:** [kaggle data](https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling/data)
 - **Rows:** 10,000
 - **Columns:** 15
 - **Description:** Customer info such as CreditScore, Age, Balance, Geography, Gender, etc., with target variable `Exited`.
@@ -76,10 +76,10 @@ This project analyzes customer churn data and builds multiple machine learning m
    streamlit run app.py
 
 ## details 
--As a recent graduate, I have gained valuable experience through various projects.
--This particular project serves as a learning endeavor, where I aim to understand the intricacies of churn, 
--the factors that contribute to churn, and the role of machine learning in identifying churn patterns.
--Currently, I am actively seeking employment opportunities that will allow me to effectively apply my acquired experience. 
+- As a recent graduate, I have gained valuable experience through various projects.
+- This particular project serves as a learning endeavor, where I aim to understand the intricacies of churn,
+- the factors that contribute to churn, and the role of machine learning in identifying churn patterns.Currently,
+- I am actively seeking employment opportunities that will allow me to effectively apply my acquired experience. 
 
 ## contact details 
 
