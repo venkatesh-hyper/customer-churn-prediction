@@ -55,7 +55,7 @@ This project analyzes customer churn data and builds multiple machine learning m
 
 ## ROC curve
 
-![ROC curve](image/roc curve.png)
+![ROC curve](customer-churn-prediction/image/roccurve.png)
 
 ---
 
@@ -80,7 +80,7 @@ This project analyzes customer churn data and builds multiple machine learning m
    streamlit run app.py
 
 ## Dashboard
-![dashboard](image/img1)
+![dashboard](customer-churn-prediction/image/img1.png)
 
 ## details 
 - As a recent graduate, I have gained valuable experience through various projects.
