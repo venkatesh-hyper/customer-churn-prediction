@@ -79,7 +79,8 @@ This project analyzes customer churn data and builds multiple machine learning m
 - As a recent graduate, I have gained valuable experience through various projects.
 - This particular project serves as a learning endeavor, where I aim to understand the intricacies of churn,
 - the factors that contribute to churn, and the role of machine learning in identifying churn patterns.Currently,
-- I am actively seeking employment opportunities that will allow me to effectively apply my acquired experience. 
+- I am actively seeking employment opportunities that will allow me to effectively apply my acquired experience.
+- **Notebook:**[kaggle notebook](https://www.kaggle.com/code/venkateshpvnky/chunk-prediction-for-bank)
 
 ## contact details 
 
@@ -87,7 +88,7 @@ Contact
 For questions or collaboration, reach out to:
 
 Venkatesh P
-Machine Learning Engineer & Student
+- Machine Learning Engineer & Student
 
 <p align="center">
   <a href="https://www.datascienceportfol.io/venkateshml" target="_blank">
