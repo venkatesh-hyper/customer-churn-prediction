@@ -1,4 +1,4 @@
-[BLOG](https://medium.com/@venkateshpvnky9/predicting-customer-churn-using-machine-learning-e4a4680767f3)
+[BLOG](https://medium.com/@venkateshpvnky9/predicting-customer-churn-using-machine-learning-e4a4680767f3) , [Deploy Dashboard](https://customer-churn-prediction-venkatesh.streamlit.app/)
 # Churn Prediction Project
 Employing my machine learning techniques, I have identified a solution to the problem of customers requiring more attention to avoid becoming a burden for the bank. 
 
