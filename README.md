@@ -53,6 +53,10 @@ This project analyzes customer churn data and builds multiple machine learning m
 - **Feature importance** analyzed for Random Forest.
 - **Feature coefficients** examined for Logistic Regression.
 
+## ROC curve
+
+![ROC curve](image/roc curve.png)
+
 ---
 
 ## Insights & Recommendations
@@ -74,6 +78,9 @@ This project analyzes customer churn data and builds multiple machine learning m
 3. Run Streamlit app
    ```bash
    streamlit run app.py
+
+## Dashboard
+![dashboard](image/img1)
 
 ## details 
 - As a recent graduate, I have gained valuable experience through various projects.
