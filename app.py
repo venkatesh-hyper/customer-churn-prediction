@@ -11,6 +11,7 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import kagglehub
+import joblib
 import os
 
     
@@ -65,38 +66,22 @@ if df is not None:
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
 
-    # --- Model Training ---
-    @st.cache_resource
-    def train_models(X_train_scaled, y_train):
-        models = {}
+def load_models():
+    model_dir = 'models'
+    models = {
+        'Random Forest': joblib.load(os.path.join(model_dir, 'random_forest_model.joblib')),
+        'Logistic Regression': joblib.load(os.path.join(model_dir, 'logistic_regression_model.joblib')),
+        'SVM': joblib.load(os.path.join(model_dir, 'svm_model.joblib')),
+        'KNN': joblib.load(os.path.join(model_dir, 'knn_model.joblib')),
+        'Gradient Boosting': joblib.load(os.path.join(model_dir, 'gradient_boosting_model.joblib')),
+         }
+    return models
 
-        model_rf = RandomForestClassifier(n_estimators=100, random_state=42)
-        model_rf.fit(X_train_scaled, y_train)
-        models['Random Forest'] = model_rf
-
-        model_lr = LogisticRegression(random_state=42)
-        model_lr.fit(X_train_scaled, y_train)
-        models['Logistic Regression'] = model_lr
-
-        model_svm = SVC(random_state=42, probability=True)
-        model_svm.fit(X_train_scaled, y_train)
-        models['SVM'] = model_svm
-
-        model_knn = KNeighborsClassifier(n_neighbors=5)
-        model_knn.fit(X_train_scaled, y_train)
-        models['KNN'] = model_knn
-
-        model_gb = GradientBoostingClassifier(n_estimators=100, random_state=42)
-        model_gb.fit(X_train_scaled, y_train)
-        models['Gradient Boosting'] = model_gb
-
-        return models
-
-    trained_models = train_models(X_train_scaled, y_train)
+trained_models = load_models()
 
     # --- Model Evaluation ---
-    st.sidebar.header("Model Evaluation")
-    selected_model_name = st.sidebar.selectbox("Select Model for Evaluation", list(trained_models.keys()))
+st.sidebar.header("Model Evaluation")
+selected_model_name = st.sidebar.selectbox("Select Model for Evaluation", list(trained_models.keys()))
     
    
 
